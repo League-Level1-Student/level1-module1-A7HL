@@ -37,7 +37,7 @@ public class AsteroidsGame implements GameScene, ActionListener {
 	Timer spawner;
 	Timer rof;
 	int lives = 3;
-
+	
 	public AsteroidsGame() {
 		if (rocket.collisionBox == null) {
 			JOptionPane.showMessageDialog(null, "Rocket.java needs a constructor");
