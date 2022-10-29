@@ -61,7 +61,10 @@ public class HungryHungryHippos implements GameScene, GameControlScene {
      * Create your hippo objects here. The "left" input parameter indicates
      * which side the hippo is drawn.
      */
-    Hippo myHippoObject = new Hippo("left");
+    Hippo myHippoLizzie = new Hippo("left","Lizzie Hippo",Color.magenta);
+    Hippo myHippoHenry = new Hippo("right","Henry Hippo",Color.orange);
+    Hippo myHippoHomer = new Hippo("up","Homer Hippo",Color.green);
+    Hippo myHippoHarry = new Hippo("down","Harry Hippo",Color.yellow);
 
     public HungryHungryHippos() {
         gameFrame.setScene(this);
@@ -96,7 +99,10 @@ public class HungryHungryHippos implements GameScene, GameControlScene {
         /*
          * Draw all the hippos here
          */
-        myHippoObject.draw(g);
+        myHippoLizzie.draw(g);
+        myHippoHenry.draw(g);
+        myHippoHomer.draw(g);
+        myHippoHarry.draw(g);
         
         if (startGame) {
             /*
@@ -109,7 +115,10 @@ public class HungryHungryHippos implements GameScene, GameControlScene {
              * checkHippoEating(myHippoObject) method. Make sure to do
              * this for all of your hippos!
              */
-            checkHippoEating(myHippoObject);
+            checkHippoEating(myHippoLizzie);
+            checkHippoEating(myHippoHenry);
+            checkHippoEating(myHippoHomer);
+            checkHippoEating(myHippoHarry);
         }
     }
 
@@ -123,13 +132,13 @@ public class HungryHungryHippos implements GameScene, GameControlScene {
         if (keyCode == KeyEvent.VK_S) {
             startGame = true;
         } else if (keyCode == KeyEvent.VK_1) {
-            myHippoObject.eat();
+            myHippoLizzie.eat();
         } else if (keyCode == KeyEvent.VK_2) {
-            
+            myHippoHenry.eat();
         } else if (keyCode == KeyEvent.VK_3) {
-            
+            myHippoHomer.eat();
         } else if (keyCode == KeyEvent.VK_4) {
-            
+            myHippoHarry.eat();
         }
     }
     

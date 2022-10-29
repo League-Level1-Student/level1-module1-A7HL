@@ -132,6 +132,7 @@ public class SolarSystem implements GameControlScene {
         Saturn.draw(g, numDays);
         Neptune.draw(g, numDays);
         Uranus.draw(g, numDays);
+        Neptune.draw(g, numDays);
     }
     
     @Override
