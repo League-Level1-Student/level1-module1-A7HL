@@ -296,7 +296,7 @@ public class TurfWar extends PApplet {
     // Challenge: Try to add more players to the game. If you need to figure out
     // additional keycodes for controls try using https://keycode.info/
 
-    static public void main(String[] args) {
+    public static void main(String[] args) { 
         PApplet.main(TurfWar.class.getName());
     }
 }
